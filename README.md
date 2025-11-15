@@ -13,7 +13,7 @@ If you start at (0,0) and the U-boat is at (5,2), use simulation to estimate the
 
 Model setup:
 1. •	A lookup table of all possible moves
-2. •	Use U-boat location (5,2)
+2. •	Use U-boat location (5,2) 🫡
 3. •	Start each trial at (0,0)
 4.    For each iteration:
   
@@ -25,7 +25,7 @@ Model setup:
    
 6. •	Repeat for 10,000 iterations and recorded how many iterations had success.
 
-**Simulation**
+Simulation:
 
 There are a few different ways to formulate and solve this problem. For the simulation, my first attempt was done using @Risk, a commercial Monte Carlo engine.
 
