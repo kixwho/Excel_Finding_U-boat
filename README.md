@@ -17,11 +17,11 @@ Model setup:
 3. •	Start each trial at (0,0)
 4.    For each iteration:
   
-   •	Randomly pick one row from the lookup (uniform), add its x/y changes to current position;
-   
-   •	Repeat 100 times
-
-   •	If at any move the position reaches U-boat's location, that iteration is a success.
+       •	Randomly pick one row from the lookup (uniform), add its x/y changes to current position;
+       
+       •	Repeat 100 times
+    
+       •	If at any move the position reaches U-boat's location, that iteration is a success.
    
 6. •	Repeat for 10,000 iterations and recorded how many iterations had success.
 
