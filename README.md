@@ -9,6 +9,15 @@ If your probe is at (x,y), you can only move it to one of the eight nearby grid 
 
 If you start at (0,0) and the U-boat is at (5,2), use simulation to estimate the probability that you will find the U-boat in 100 moves or fewer.
 
+## Use Cases
+
+All models are wrong, some are useful. This model is particularly useful because 1. it captures state change over time under **uncertainty**, and 2. easily implemented in Excel for a smaller, less rigorous analysis. In other words, the model doesn't perfectly replicate reality, yet it informs business decisions at a low computational cost.
+
+Practical use cases:
+* OPERATIONS: customer eventually converts after repeated touches
+* RISK MANAGEMENT: fraud detection catches a case before loss
+* FUNNEL MODELING: a lead reaches purchase within 100 interactions
+
 ## Solution
 
 **Model setup:**
@@ -29,9 +38,6 @@ If you start at (0,0) and the U-boat is at (5,2), use simulation to estimate the
 
 There are a few different ways to formulate and solve this problem. For the simulation, my first attempt was done using @Risk, a commercial Monte Carlo engine.
 
-Since the model is pretty straightforward, I've also tried running the sim using Python and VBA.
+Since the model is pretty straightforward, I've also run the sim in Python and VBA.
 
-The results are similar, Python simulation is closest to the exact mathematical probability of **≈15.6015%**. You can find a scatter plot of where we eventually end up in the Excel file. 🚢⚓
-
-## Practical Extension
-
+The results are similar, the Python simulation came closest to the exact mathematical probability of **≈15.6015%**. You can find a scatter plot of where we eventually ended up in the Excel file. 🚢⚓
