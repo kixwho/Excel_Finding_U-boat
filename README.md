@@ -18,9 +18,19 @@ Practical use cases:
 * RISK MANAGEMENT: fraud detection catches a case before loss
 * FUNNEL MODELING: a lead reaches purchase within 100 interactions
 
-## Solution
+## Python Logic
 
-**Model setup:**
+1. Given values: 3 things are given to us. A list of possible moves, our starting location, and U-boat location. We first assign all 3 variables.
+   
+2. Rules: We also define "success" as a function of our location (x,y), checking after every move if we've found the U-boat yet.
+   
+3. Simulation: Using a nested loop, we simulate 100 moves for any number of runs.
+
+4. Result: Python simulation came closest to the exact mathematical probability of **≈15.6015%**.
+
+## Excel Logic
+
+Model setup:
 1. •	A lookup table of all possible moves
 2. •	Use U-boat location (5,2) 🫡
 3. •	Start each trial at (0,0)
@@ -36,8 +46,4 @@ Practical use cases:
 
 **Simulation:**
 
-There are a few different ways to formulate and solve this problem. For the simulation, my first attempt was done using @Risk, a commercial Monte Carlo engine.
-
-Since the model is pretty straightforward, I've also run the sim in Python and VBA.
-
-The results are similar, the Python simulation came closest to the exact mathematical probability of **≈15.6015%**. You can find a scatter plot of where we eventually ended up in the Excel file. 🚢⚓
+My first attempt was done using @Risk, a commercial Monte Carlo engine. VBA produced similar results. You can find a scatter plot of where we eventually ended up in the Excel file. 🚢⚓
